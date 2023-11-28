@@ -32,8 +32,8 @@
 }
 
 .n-blue-stroke {
-    border: 1px solid #00FFDC;
-    background: rgba(75, 184, 169, 0.10);
+    border: 1px solid red;
+    background: rgba(184, 75, 75, 0.1);
 
 }
 
@@ -52,7 +52,7 @@
 }
 
 .n-blue {
-    color: #00FFDC;
+    color: red;
 }
 
 .n-yellow {
