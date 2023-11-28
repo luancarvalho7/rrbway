@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
 import React from "react"
 
+
 const PixIcon = () => {
     return (
         <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none">
@@ -43,7 +44,7 @@ export const NotiBadge = React.memo(({ type = "gift", name = "Gilmar", value = "
     setTimeout(() => setRun(true), 20000)
     return (
         <div className={run ? `nRun notiBadge n-${currentColor}-stroke` : `notiBadge n-${currentColor}-stroke`}>
-            {bcCurrent.type == "gift" ? <GiftIcon /> : <PixIcon />} <h1>{bcCurrent.name} <span className='n-regular'>ganhou</span> <span className={`n-${currentColor}`}>€{type=="gift" ? Math.floor(bcCurrent.value*20) : Math.floor(bcCurrent.value)}</span> <span className='n-regular'>{bcCurrent.type == "gift" ? "no" : "de"}</span>  <span className={`n-${color()}`}>{type == "gift" ? "Sorteio" : `${game}`}</span> </h1>
+            {bcCurrent.type == "gift" ? <GiftIcon /> : <img src="https://i.postimg.cc/9QDfYNQP/mbwayyico.png" width={15}/>} <h1>{bcCurrent.name} <span className='n-regular'>ganhou</span> <span className={`n-${currentColor}`}>€{type=="gift" ? Math.floor(bcCurrent.value*20) : Math.floor(bcCurrent.value)}</span> <span className='n-regular'>{bcCurrent.type == "gift" ? "no" : "de"}</span>  <span className={`n-${color()}`}>{type == "gift" ? "Sorteio" : `${game}`}</span> </h1>
         </div>
     )
 })
